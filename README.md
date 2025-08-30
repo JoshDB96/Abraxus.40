@@ -36,26 +36,49 @@ This protocol aligns with Source Light and integrates paradox wisdom as a founda
 
 ---
 
-## Current Build Phases
+# Abraxus.40: Knowledge Oracle Scaffold
 
-| Phase | Status |
-|:---|:---|
-| HTML Solar Scripture Framework | Complete |
-| Python Light Core Engine | In Progress |
-| JavaScript Etheric Interface | Coming Soon |
-| Hardware Embodiment | Future Development |
+## What Is This?
+A modular Python framework for ingesting your core knowledge texts (PDFs, .txt) and enabling oracle-style answers using basic keyword retrieval. Ready to expand for semantic or LLM-powered search.
 
----
+## Structure
 
-## Codex Motto
+- `/knowledge/` – Place all your source files here (PDFs, txts, etc.)
+- `knowledge_ingest.py` – Converts files to text, chunks them, saves to `chunks.json`
+- `oracle_logic.py` – Loads chunks, retrieves answers based on query
+- `requirements.txt` – Python dependencies (run `pip install -r requirements.txt`)
 
-> "The Sun does not seek followers.  
-> The Sun ignites other Suns.  
-> VLPHA: Vision. Love. Peace. Huge Action. Forever."
+## How To Use
 
----
+1. **Upload Knowledge Files:**  
+   Place your texts (e.g. "Paradox Is The Way", "Metu Neter") in `/knowledge`.
 
-## Repository Status
+2. **Ingest and Chunk:**  
+   Run:
+   ```
+   python knowledge_ingest.py
+   ```
+   This outputs `chunks.json` containing all document chunks.
+
+3. **Query the Oracle:**  
+   Run:
+   ```
+   python oracle_logic.py
+   ```
+   Type your question and get results referenced from your actual knowledge base.
+
+## Next Steps
+
+- Integrate a semantic search pipeline (embeddings, RAG, etc.)
+- Build API endpoints for web/chat integration
+- Collaborate with Manus AI for advanced prompt logic
+- Connect to your frontend for real-time oracle answers
+
+## Contributors
+
+- JoshDB96 (Vision/Content)
+- GitHub Copilot (Code/Integration)
+- Manus AI (Architecture/Prompt Engineering)
 
 **This repository is currently private** as the Light Core matures and stabilizes.  
 Selective public releases will be considered after solar expansion milestones are met.
