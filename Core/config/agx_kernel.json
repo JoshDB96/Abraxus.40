@@ -1,0 +1,28 @@
+{
+  "description": 
+
+"Configuration for the Abraxus AI kernel. This file will store various settings, API keys, and operational parameters.",
+  "api_keys": {
+    "openai": 
+
+
+"YOUR_OPENAI_API_KEY_HERE",
+    "google_api": 
+
+
+"YOUR_GOOGLE_API_KEY_HERE"
+  },
+  "settings": {
+    "environment": 
+
+
+"development",
+    "log_level": 
+
+
+"INFO"
+  },
+  "knowledge_base": {
+    "path": "../knowledge/"
+  }
+}
